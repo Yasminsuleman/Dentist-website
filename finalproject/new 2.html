@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dentist's Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: pink;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .welcome {
+            margin-bottom: 30px;
+        }
+
+        .appointment-form {
+            position: absolute;
+            top: 0;
+            right: 20px; /* Adjust the gap from the right end */
+            width: 250px; /* Adjust the width to make it smaller */
+            background-color: pink;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: white;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: white;
+            color: pink;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Our Dentist's Homepage</h1>
+        <div class="welcome">
+            <p>Here at our dental clinic, we provide top-notch dental services to keep your smile healthy and bright.</p>
+            <p>Welcome to our dental practice, where your oral health is our top priority.</p>
+        </div>
+
+        <div class="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <p>We have a team of highly skilled and experienced dentists who are committed to providing exceptional care to our patients.</p>
+            <p>Our state-of-the-art facilities and advanced dental technology ensure that you receive the best treatment possible.</p>
+            <p>With a focus on patient comfort and personalized care, we strive to make your dental experience as pleasant as possible.</p>
+            <p>Choose us for all your dental needs and let us help you achieve a beautiful and healthy smile.</p>
+        </div>
+    </div>
+
+    <div class="appointment-form">
+        <h2>Schedule an Appointment</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Schedule Appointment">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Contact us at: contact@example.com</p>
+    </div>
+</body>
+</html>

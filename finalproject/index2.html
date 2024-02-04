@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dentist's Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: pink;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .appointment-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input {
+            padding: 10px;
+            border: 1px solid pink;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid pink;
+            border-radius: 5px;
+            resize: none;
+            outline: none;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: pink;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+		<li><a href="Table.html">Schedule Appointment</a></li>
+		<li><a href="Video.html">Video</a></li>
+		<li><a href="location.html">Location</a></li>
+		
+    </ul>
+</div>
+
+
+    <div class="container">
+        <h1>Happy Teeth</h1>
+		<img src="Happyhome.jpg" alt="Happy Teeth" width="200">
+        <p>At HappyTeeth, we firmly believe that a healthy smile is the key to happiness and confidence. Our team of devoted dental professionals is committed to delivering top-quality dental care within a warm and inviting environment. From the moment you step into our clinic, your comfort and well-being become our utmost priority. 
+		<p>Discover exceptional dental care at HappyTeeth Dental Clinic. Our highly dedicated team of dental professionals is devoted to ensuring the health and enhancement of your smile. Our services encompass a wide spectrum, including regular check-ups, professional teeth cleaning, cosmetic dentistry, restorative treatments, and orthodontic solutions. We prioritize patient education, empowering you with valuable insights into oral hygiene and care. From urgent dental needs to achieving your desired smile, our clinic provides a comfortable and fulfilling dental experience. 
+		<p>Our commitment to your oral well-being transcends mere treatments. We understand that each patient is distinct, and as such, we tailor our services to align with your unique requirements. Our aim is to foster an affirmative and relaxed atmosphere throughout each visit, ensuring that you depart our clinic with both a healthier smile and a heightened sense of well-being. 
+		</p>
+		<p>A cornerstone of our ethos lies in keeping pace with the latest strides in dental technology and methodologies. Our state-of-the-art equipment empowers us to administer the finest care while prioritizing your safety and comfort throughout the course of your treatment. 
+		</p>
+		<p>Whether you're a returning member of the HappyTeeth community or are venturing into our clinic for the first time, we extend a warm and genuine welcome. What distinguishes us is our unswerving commitment to excellence, our empathetic approach, and our resolute focus on delivering personalized patient care. We're eagerly looking forward to the privilege of supporting you as partners in your quest for optimal oral health. 
+		</p>
+		<p>We want to convey our deep gratitude for choosing HappyTeeth Dental Clinic. Your smile truly fuels our inspiration, and your satisfaction stands as our ultimate achievement. 
+		</p>
+		<h2>Schedule an Appointment</h2>
+        <form class="appointment-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Schedule Appointment">
+            </div>
+        </form>
+		
+    </div>
+	<div class="image-container">
+        <img src="tooth.jpg" alt="tooth cartoon" width="200">
+    </div>
+ <div class="footer">
+	   <p>Contact us at: contact@Happy teeth.com</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: pink;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .image-container {
+            margin-top: 30px;
+        }
+
+        .footer {
+            background-color: pink;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .appointment-box {
+            background-color: pink;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 500px; /* Set the width */
+            height: 500px; /* Set the height */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            position: relative;
+        }
+
+        .appointment-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: -20px;
+            margin-right: -20px;
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .appointment-content {
+            margin-bottom: 10px;
+        }
+
+        .appointment-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid pink;
+            border-radius: 5px;
+            outline: none;
+            width: 100%;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: pink;
+            color: black;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+			<li><a href="Table.html">Schedule Appointment</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="location.html">Location</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="appointment-box">
+            <div class="appointment-image">
+                <img src="tt.jpg" alt="tt cartoon" width="100">
+            </div>
+            <div class="appointment-content">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us to schedule an appointment.</p>
+            </div>
+            <form class="appointment-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Schedule Appointment">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Contact us at: contact@happyteeth.com</p>
+    </div>
+</body>
+</html>
